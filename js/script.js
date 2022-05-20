@@ -2,7 +2,8 @@ let arrayNumbers = ["zero", "one", "two", "three", "four", "five","six", "seven"
 
 let arrayNames = ["Sam", "Aline", "Benji"];
 
-let arrayActions = ["stink", "eat", "poop", "play", "hide", "sniff","run"];
+let arrayActions = ["stinks", "eats", "poops", "plays", "hides", "sniffs","runs"];
+
 
 function findRandomWord(listOfWords) {
 
@@ -11,7 +12,17 @@ function findRandomWord(listOfWords) {
     return listOfWords[random]
 }
 
+function generateFullPhrase() {
 
-console.log(findRandomWord(arrayNumbers));
-console.log(findRandomWord(arrayNames));
-console.log(findRandomWord(arrayActions));
+    return '${findRandomWord(arrayNumbers)} ${findRandomWord(arrayNames)} ${findRandomWord(arrayActions)}';
+}
+
+function displayFullPhrase() {
+    let phrase = generateFullPhrase(); 
+    
+    let pElement = document.querySelector(".phrase");
+
+    pElement.innerText = phrase;
+}
+
+displayFullPhrase();
