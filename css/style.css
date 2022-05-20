@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    font-style: italic;
+    color: rgb(22, 219, 22); 
+    margin: 50px auto;
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    font-style: italic;
+    color: orange; 
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sections {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.button {
+    margin: 2rem;
+}
+
+.output {
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#firstButton {
+    font-size: 2rem;
+    font-style: italic;
+    color: green;
+}
+
+#secondButton {
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+    background-color: lightgrey;
+}
+
+#thirdButton {
+    font-size: 2rem;
+    font-style: italic;
+    color: orange;
+}
+
